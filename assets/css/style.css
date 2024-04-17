@@ -1,0 +1,407 @@
+/* fonts */
+@font-face {
+    font-family: 'SemiBold';
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Medium';
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Light';
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+
+/* defualts */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    transition: .2s;
+    text-decoration: none;
+
+    font-family: 'Regular';
+}
+
+
+a {
+    color: #000;
+    cursor: pointer;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.form h1 {
+    font-family: 'Medium';
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.form p {
+    font-family: 'Light';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form a {
+    font-family: 'Light';
+    font-size: 14px;
+    font-weight: 400;
+    color: #4f46e5;
+}
+
+.input {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    outline: none;
+    background: #fff;
+}
+
+.input:focus {
+    border: 1px solid #4f46e5;
+    color: #4f46e5;
+}
+
+.chekbox {
+    align-items: start;
+    display: flex;
+    gap: 7px;
+}
+
+.btn-primary {
+    margin-top: 15px;
+    width: fit-content;
+    padding: 10px 20px;
+    background: #4f46e5;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.message {
+
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 320px;
+
+    padding: 30px;
+    background: rgba(201, 201, 201, 0.9);
+    border: 1px solid #70707038;
+    border-radius: 5px;
+    color: #707070;
+}
+
+
+/* header */
+
+header {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.header-container {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+
+.logo {
+    font-family: "SemiBold";
+    font-size: 20px;
+    color: #000;
+}
+
+.header-nav {
+    display: flex;
+    gap: 50px;
+}
+
+.header-icons {
+    display: flex;
+    gap: 10px;
+}
+
+/* slider */
+
+.slider {
+    margin-top: 30px;
+    width: 100%;
+    height: 600px;
+    border-radius: 30px;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.slider-track {
+    width: 300%;
+    height: 100%;
+    display: flex;
+
+    position: absolute;
+    left: 0%;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slide1 {
+    background: url('../image/1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide2 {
+    background: url('../image/2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide3 {
+    background: url('../image/3.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.prev-btn {
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    left: 30px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.next-btn {
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.slider-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 10%;
+    gap: 10px;
+    color: #fff;
+
+
+}
+
+.slider-text a {
+    color: #fff;
+}
+
+.search {
+    display: flex;
+    gap: 5px;
+    width: 30%;
+    align-items: center;
+}
+
+.catalog-container {
+    margin: 150px 0px;
+}
+
+.categories {
+    display: flex;
+    gap: 15px;
+}
+
+.filtration {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+
+.cat-active {
+    opacity: .3;
+}
+
+.single-product {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.single-product img {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 15px;
+    height: 600px;
+    object-fit: cover;
+
+}
+
+
+.product {
+    width: 300px;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+}
+
+.product:hover {
+    opacity: .7;
+}
+
+
+.product-title {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.product-title span {
+    font-family: 'Medium';
+    font-weight: 500;
+}
+
+.product-title span {
+    font-family: 'Medium';
+    font-weight: 500;
+}
+
+.product img {
+    width: 250px;
+    height: 350px;
+    background: #00000010;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+.admin-title {
+    padding: 100px 0px 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-btns a {
+    font-size: 12px;
+}
+
+.product-btns {
+
+    height: max-content;
+}
+
+.basket-item {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.basket-item-left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.basket-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.basket-item-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.basket h2 {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.basket-container {
+    margin-bottom: 60px;
+}
+
+table {
+    margin-top: 60px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+thead tr th {
+    padding: 15px 0px;
+    background: #4f46e5;
+    color: #fff;
+}
+
+tbody tr td {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.order-btns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
